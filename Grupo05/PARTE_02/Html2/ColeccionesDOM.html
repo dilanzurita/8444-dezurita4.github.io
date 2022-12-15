@@ -5,7 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Animaciones DOM</title>
+        <title>Colecciones DOM</title>
+        <link rel=stylesheet href=../codemirror/lib/codemirror.css>
+        <link rel=stylesheet href=../codemirror/theme/oceanic-next.css>
+        <script src=../codemirror/lib/codemirror.js></script>
+        <script src=../codemirror/mode/xml/xml.js></script>
+        <script src=../codemirror/mode/javascript/javascript.js></script>
+        <script src=../codemirror/mode/css/css.js></script>
+        <script src=../codemirror/mode/htmlmixed/htmlmixed.js></script>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -19,7 +26,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">Animaciones DOM</a>
+                <a class="navbar-brand" href="#page-top">Colecciones DOM</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -38,8 +45,8 @@
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">Animaciones DOM</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Aprende a crear animaciones HTML usando JavaScript.</h2>
+                        <h1 class="mx-auto my-0 text-uppercase">Colecciones DOM</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">La interfaz HTMLCollection representa una colección genérica (objeto tipo array similar a arguments) de elementos (en orden de documento) y ofrece métodos y propiedades para seleccionarlos de la lista.</h2>
                         <a class="btn btn-primary" href="#about">Comencemos</a>
                     </div>
                 </div>
@@ -50,9 +57,9 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
-                        <h2 class="text-white mb-4">¿Que son las animaciones DOM?</h2>
+                        <h2 class="text-white mb-4">¿Que son las colecciones DOM?</h2>
                         <p class="text-white-50">
-                            Son los efectos visuales que se pueden aplicar en una página web para crear movimiento en los elementos que la componen. Hay páginas web que se destacan por su diseño. Para lograrlo, se utilizan diferentes herramientas visuales, las cuales ayudan a generar páginas más dinámicas. Entonces, las animaciones DOM son las encargadas de los elementos que están en movimiento.
+                            Una colección representa un grupo de objetos, conocidos como sus elementos. Las colecciones permiten elementos duplicados y los mismos no están ordenados. Los elementos de una colección no son accedidos a través de un índice. Por el contrario su única forma de recuperación es uno a uno, secuencialmente.
                         </p>
                     </div>
                 </div>
@@ -64,13 +71,17 @@
             <div class="container px-4 px-lg-5">
                 <!-- Project Two Row-->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/animacion1.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/coleccion1.jpg" alt="..." /></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-white text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-black">Una pagina web basica</h4>
-                                    <p class="mb-0 text-black-40">Para demostrar cómo crear animaciones HTML con JavaScript, usaremos una página web simple:</p>
+                                    <h4 class="text-black">El objeto HTMLCollection</h4>
+                                    <p class="mb-0 text-black-40">El getElementsByTagName()método devuelve un HTMLCollectionobjeto.
+
+                                    Un HTMLCollectionobjeto es una lista similar a una matriz (colección) de elementos HTML.
+
+                                    El siguiente código selecciona todos los <p>elementos en un documento:</p>
                                     <hr class="d-none d-lg-block mb-0 me-0" />
                                 </div>
                             </div>
@@ -79,13 +90,13 @@
                 </div><br><br>
                 <!-- Project One Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/animacion2.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/coleccion2.jpg" alt="..." /></div>
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Contenedor de Animacion</h4>
-                                    <p class="mb-0 text-white">Todas las animaciones deben ser relativas a un elemento contenedor.</p>
+                                    <h4 class="text-white">HTML HTMLCollection Longitud</h4>
+                                    <p class="mb-0 text-white">La lengthpropiedad define el número de elementos en un HTMLCollection:</p>
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>
@@ -94,14 +105,14 @@
                 </div><br><br>
                 <!-- Project Two Row-->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/animacion3.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/coleccion3.jpg" alt="..." /></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-white text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-black">Dale estilo a los elementos</h4>
-                                    <p class="mb-0 text-black-40">El elemento contenedor debe crearse con estilo = " position: relative".</p>
-                                    <p class="mb-0 text-black-40">El elemento de animación debe crearse con estilo = " position: absolute".</p>
+                                    <h4 class="text-black">HTML HTMLCollection Longitud</h4>
+                                    <p class="mb-0 text-black-40">La lengthpropiedad es útil cuando desea recorrer los elementos de una colección:</p>
+                                    
                                     <hr class="d-none d-lg-block mb-0 me-0" />
                                 </div>
                             </div>
@@ -109,36 +120,28 @@
                     </div>
                 </div><br><br>
                 <!-- Project One Row-->
+
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/animacion4.jpg" alt="..." /></div>
+                    <center>
+                    
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Codigo de Animacion</h4>
-                                    <p class="mb-0 text-white">Las animaciones de JavaScript se realizan mediante la programación de cambios graduales en el estilo de un elemento.
-                                    Los cambios son llamados por un temporizador. Cuando el intervalo del temporizador es pequeño, la animación parece continua. El código básico es:</p>
+                                    <h4 class="text-white">¡Una HTMLCollection NO es una matriz!</h4>
+                                    <p class="mb-0 text-white">Una HTMLCollection puede parecer una matriz, pero no lo es.
+
+                                    Puede recorrer la lista y hacer referencia a los elementos con un número (como una matriz).
+
+                                    Sin embargo, no puede usar métodos de matriz como valueOf(), pop(), push() o join() en una HTMLCollection.</p>
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>
                         </div>
+                    </center>
                     </div>
                 </div><br><br>
-                <!-- Project Two Row-->
-                <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/animacion5.jpg" alt="..." /></div>
-                    <div class="col-lg-6 order-lg-first">
-                        <div class="bg-white text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-black">Crear la animación completa usando JavaScript</h4>
-                                    <p class="mb-0 text-black">Por ultimo veremos la parte del codigo que realiza mayor parte de la animacion que generamos,</p>
-                                    <hr class="d-none d-lg-block mb-0 me-0" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><br><br>
+                
             </div>
         </section>
         <!-- Signup-->
@@ -148,25 +151,34 @@
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
                         <h2 class="text-white mb-5">Editemos el codigo!</h2>
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        
-                            <!-- Email address input-->
-                            
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
+                        <textarea id=code name=code>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML DOM</h2>
+
+<p>Hello World!</p>
+
+<p>Hello Norway!</p>
+
+<p>Click the button to change the color of all p elements.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  const myCollection = document.getElementsByTagName("p");
+  for (let i = 0; i < myCollection.length; i++) {
+    myCollection[i].style.color = "red";
+  }
+}
+</script>
+
+</body>
+</html>
+</textarea>
+    <iframe id=preview></iframe>
                             
                     </div>
                 </div>
@@ -184,5 +196,26 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script>
+      var delay;
+      // Initialize CodeMirror editor with a nice html5 canvas demo.
+      var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
+        mode: 'text/html'
+        
+      });
+      editor.on("change", function() {
+        clearTimeout(delay);
+        delay = setTimeout(updatePreview, 300);
+      });
+      editor.setSize("800", "400");
+      function updatePreview() {
+        var previewFrame = document.getElementById('preview');
+        var preview =  previewFrame.contentDocument ||  previewFrame.contentWindow.document;
+        preview.open();
+        preview.write(editor.getValue());
+        preview.close();
+      }
+      setTimeout(updatePreview, 300);
+    </script>
     </body>
 </html>

@@ -6,6 +6,13 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Eventos DOM</title>
+        <link rel=stylesheet href=../codemirror/lib/codemirror.css>
+        <link rel=stylesheet href=../codemirror/theme/oceanic-next.css>
+        <script src=../codemirror/lib/codemirror.js></script>
+        <script src=../codemirror/mode/xml/xml.js></script>
+        <script src=../codemirror/mode/javascript/javascript.js></script>
+        <script src=../codemirror/mode/css/css.js></script>
+        <script src=../codemirror/mode/htmlmixed/htmlmixed.js></script>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -65,13 +72,14 @@
             <div class="container px-4 px-lg-5">
                 <!-- Project Two Row-->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/animacion1.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/evento1.jpg" alt="..." /></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-white text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-black">Una pagina web basica</h4>
-                                    <p class="mb-0 text-black-40">Para demostrar cómo crear animaciones HTML con JavaScript, usaremos una página web simple:</p>
+                                    <h4 class="text-black">Reaccionar a los Eventos</h4>
+                                    <p class="mb-0 text-black-40">Un JavaScript se puede ejecutar cuando ocurre un evento, como cuando un usuario hace clic en un elemento HTML.
+                                    Para ejecutar código cuando un usuario hace clic en un elemento, agregue código JavaScript a un atributo de evento HTML:</p>
                                     <hr class="d-none d-lg-block mb-0 me-0" />
                                 </div>
                             </div>
@@ -80,13 +88,13 @@
                 </div><br><br>
                 <!-- Project One Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/animacion2.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/evento2.jpg" alt="..." /></div>
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Contenedor de Animacion</h4>
-                                    <p class="mb-0 text-white">Todas las animaciones deben ser relativas a un elemento contenedor.</p>
+                                    <h4 class="text-white">Atributos de eventos HTML</h4>
+                                    <p class="mb-0 text-white">Para asignar eventos a elementos HTML, puede usar atributos de eventos.</p>
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>
@@ -95,14 +103,15 @@
                 </div><br><br>
                 <!-- Project Two Row-->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/animacion3.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/evento3.jpg" alt="..." /></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-white text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-black">Dale estilo a los elementos</h4>
-                                    <p class="mb-0 text-black-40">El elemento contenedor debe crearse con estilo = " position: relative".</p>
-                                    <p class="mb-0 text-black-40">El elemento de animación debe crearse con estilo = " position: absolute".</p>
+                                    <h4 class="text-black">Asignar eventos utilizando el HTML DOM</h4>
+                                    <p class="mb-0 text-black-40">El HTML DOM le permite asignar eventos a elementos HTML usando JavaScript:</p>
+                                    <p class="mb-0 text-black-40">En el ejemplo anterior, displayDatese asigna una función con nombre a un elemento HTML con la extensión id="myBtn".
+                                    La función se ejecutará cuando se haga clic en el botón.</p>
                                     <hr class="d-none d-lg-block mb-0 me-0" />
                                 </div>
                             </div>
@@ -111,14 +120,15 @@
                 </div><br><br>
                 <!-- Project One Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/animacion4.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/evento4.jpg" alt="..." /></div>
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Codigo de Animacion</h4>
-                                    <p class="mb-0 text-white">Las animaciones de JavaScript se realizan mediante la programación de cambios graduales en el estilo de un elemento.
-                                    Los cambios son llamados por un temporizador. Cuando el intervalo del temporizador es pequeño, la animación parece continua. El código básico es:</p>
+                                    <h4 class="text-white">Los eventos onload y onunload</h4>
+                                    <p class="mb-0 text-white">Los eventos onloady onunloadse activan cuando el usuario entra o sale de la página.
+                                    El onloadevento se puede utilizar para comprobar el tipo de navegador y la versión del navegador del visitante, y cargar la versión adecuada de la página web en función de la información.
+                                    Los eventos onloady onunloadse pueden utilizar para tratar con las cookies.</p>
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>
@@ -127,13 +137,14 @@
                 </div><br><br>
                 <!-- Project Two Row-->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/animacion5.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/evento5.jpg" alt="..." /></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-white text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-black">Crear la animación completa usando JavaScript</h4>
-                                    <p class="mb-0 text-black">Por ultimo veremos la parte del codigo que realiza mayor parte de la animacion que generamos,</p>
+                                    <h4 class="text-black">El evento onchange</h4>
+                                    <p class="mb-0 text-black">El onchangeevento se usa a menudo en combinación con la validación de campos de entrada.
+                                    A continuación se muestra un ejemplo de cómo utilizar onchange. La upperCase() función se llamará cuando un usuario cambie el contenido de un campo de entrada.</p>
                                     <hr class="d-none d-lg-block mb-0 me-0" />
                                 </div>
                             </div>
@@ -149,26 +160,25 @@
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
                         <h2 class="text-white mb-5">Editemos el codigo!</h2>
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        
-                            <!-- Email address input-->
-                            
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            
+                        <textarea id=code name=code>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML Events</h2>
+<h2 onclick="changeText(this)">Click on this text!</h2>
+
+<script>
+function changeText(id) {
+  id.innerHTML = "Bienvenido a WEB SCHOOl!";
+}
+</script>
+
+</body>
+</html>
+
+</textarea>
+    <iframe id=preview></iframe>  
                     </div>
                 </div>
             </div>
@@ -185,5 +195,26 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script>
+      var delay;
+      // Initialize CodeMirror editor with a nice html5 canvas demo.
+      var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
+        mode: 'text/html'
+        
+      });
+      editor.on("change", function() {
+        clearTimeout(delay);
+        delay = setTimeout(updatePreview, 300);
+      });
+      editor.setSize("800", "400");
+      function updatePreview() {
+        var previewFrame = document.getElementById('preview');
+        var preview =  previewFrame.contentDocument ||  previewFrame.contentWindow.document;
+        preview.open();
+        preview.write(editor.getValue());
+        preview.close();
+      }
+      setTimeout(updatePreview, 300);
+    </script>
     </body>
 </html>
