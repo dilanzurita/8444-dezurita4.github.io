@@ -77,7 +77,7 @@
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 1-->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
@@ -91,7 +91,7 @@
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 2-->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
@@ -118,7 +118,7 @@
                     <center><div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
                         <!-- Portfolio item 4-->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
@@ -172,53 +172,22 @@
                         <div class="row gx-4 gx-lg-5">
                             <div class="col-md-10 col-lg-8 mx-auto text-center">
                                 <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                                <h2 class="text-white mb-5">Editemos el codigo!</h2>
+                                <h2 class="text-white mb-5">EJEMPLO DE XML</h2>
                                 <textarea id=code name=code>
-        <!DOCTYPE html>
-        <html>
-        <style>
-        #container {
-          width: 400px;
-          height: 400px;
-          position: relative;
-          background: yellow;
-        }
-        #animate {
-          width: 50px;
-          height: 50px;
-          position: absolute;
-          background-color: red;
-        }
-        </style>
-        <body>
-        
-        <p><button onclick="myMove()">Click Me</button></p> 
-        
-        <div id ="container">
-          <div id ="animate"></div>
-        </div>
-        
-        <script>
-        function myMove() {
-          let id = null;
-          const elem = document.getElementById("animate");   
-          let pos = 0;
-          clearInterval(id);
-          id = setInterval(frame, 5);
-          function frame() {
-            if (pos == 350) {
-              clearInterval(id);
-            } else {
-              pos++; 
-              elem.style.top = pos + "px"; 
-              elem.style.left = pos + "px"; 
-            }
-          }
-        }
-        </script>
-        
-        </body>
-        </html>
+<pizzas>
+<pizza nombre="Barbacoa" precio="8">
+<ingrediente nombre="Salsa Barbacoa"/>
+<ingrediente nombre="Mozzarella"/>
+<ingrediente nombre="Pollo"/>
+<ingrediente nombre="Bacon"/>
+<ingrediente nombre="Ternera"/>
+</pizza>
+<pizza nombre="Margarita" precio="6">
+<ingrediente nombre="Tomate"/>
+<ingrediente nombre="Jamón"/>
+<ingrediente nombre="Queso"/>
+</pizza>
+</pizzas>
         </textarea>
             <iframe id=preview></iframe>
                                     
@@ -262,9 +231,9 @@
                         <h4 class="my-3">Funcionamiento</h4>
                         <p class="text-muted">Su funcionamiento se basa en la estructuración de una colección de pares con nombre y valor que contienen: <br>- Una clave: que corresponde al identificador del contenido <br>- Un valor: que representa el contenido correspondiente.</p>
                     </div>
+                    <h2>EJEMPLO DE JSON</h2>
+                    <img src="assets/img/Ejemplo JSON.PNG" alt="">
                 </div>
-            </div>
-        </section>
         </div>
 
          <!-- TABLA-->
@@ -298,13 +267,12 @@
                                 <td>JSON es ligero y fácil de leer, pero no proporciona información sobre el esquema o el tipo</td>
                             </tr>
                             <tr class="semejanza">
-                                <td>5</td>
-                                <td>Irvin</td>
+                                <td colspan="2">XML puede ser usado como un formato de intercambio para que los usuarios muevan datos entre aplicaciones similares, tal y como JSON</td>
                             </tr>
             
-                            <tr>
-                                <td class="active">6</td>
-                                <td class="success">Irvin</td>
+                            <tr class="diferencia">
+                                <td class="active">XML admite el intercambio de información entre sistemas de computación, como sitios web, bases de datos y aplicaciones de terceros.</td>
+                                <td class="success">JSON no es extensible, ya que no es un lenguaje de marcado de documentos, por lo que es necesario definir nuevas etiquetas o atributos para representar datos en ella.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -349,9 +317,9 @@
                         <p class="text-muted">- Sistemas de votación y calificación  <br>- Salas de chat <br>- Notificación de tendencias de Twitter</p>
                     </div>
                     <p></p>
+                    <h2>Ejemplo de AJAX</h2>
+                <img src="assets/img/Ejemplo AJAX.PNG" alt="">
                 </div>
-            </div>
-        </section>
         </div>
 
         <div data-aos="zoom-in-down">
