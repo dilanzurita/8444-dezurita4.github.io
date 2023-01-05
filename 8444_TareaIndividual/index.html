@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Web School</title>
+        <link rel=stylesheet href=../codemirror/lib/codemirror.css>
+        <link rel=stylesheet href=../codemirror/theme/oceanic-next.css>
+        <script src=../codemirror/lib/codemirror.js></script>
+        <script src=../codemirror/mode/xml/xml.js></script>
+        <script src=../codemirror/mode/javascript/javascript.js></script>
+        <script src=../codemirror/mode/css/css.js></script>
+        <script src=../codemirror/mode/htmlmixed/htmlmixed.js></script>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" /> 
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+         <!-- SCROOLL REVEAL JS LIBRARY CDN -->
+         <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+         <!-- CSS DEL SCROLL -->
+         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="assets/img/LogoESPE.png" alt="..." width="120%" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Temas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#xml">XML</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#json">JSON</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tabla">Tabla XML y AJAX</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ajax">AJAX</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+         <!-- Header-->
+         <header class="bg-dark py-5">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center">
+                    <div class="col-lg-8 col-xl-7 col-xxl-6">
+                        <div class="my-5 text-center text-xl-start">
+                            <h1 class="display-5 fw-bolder text-white mb-2">Trabajo Individual</h1>
+                            <p class="lead fw-normal text-white-50 mb-4">NRC: 8444 <br> Materia: Aplicacion de tecnologias Web</p>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#portfolio">Empecemos</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="flip-left" class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
+                        <img class="img-fluid rounded-3 my-5" src="assets/img/Portada.png" alt="..." width="60%" />
+                    </div>
+                </div>
+            </div>
+        </header>
+         <!-- TEMAS-->
+         <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Temas</h2>
+                    <h3 class="section-subheading text-muted">Haga click en cada uno para visualizar un ejemplo.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <center><img class="img-fluid" src="assets/img/XML.png" alt="..." width="42%" /></center>
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">XML</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <center><img class="img-fluid" src="assets/img/JSON.png" alt="..." width="38%"/></center>
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">JSON</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                                <div >
+                                    <div class="portfolio-hover-content"></div>
+                                </div>
+                                <center><img class="img-fluid" src="assets/img/Tabla.PNG" alt="..." width="96%" /></center>
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Tabla</div>
+                            </div>
+                        </div>
+                    </div>
+                    <center><div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <center><img class="img-fluid" src="assets/img/AJAX.png" alt="..." width="50%" /></center>
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">AJAX</div>
+                            </div>
+                        </div>
+                    </div></center>
+                </div>
+            </div>
+        </section>
+       
+
+         <!-- XML-->
+         <section class="page-section fond1" id="xml">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">XML</h2>
+                    <h3 class="section-subheading text-muted">JavaScript Navegación DOM HTML</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-question fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">¿Qué es?</h4>
+                        <p class="text-muted">Extensible Markup Language, que es un lenguaje de marcado que define un conjunto de reglas para la codificación de documentos.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-solid fa-book fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Estructura</h4>
+                        <p class="text-muted">Un archivo XML se divide en dos partes: prolog y body. La parte prolog consiste en metadatos administrativos, como declaración XML, instrucción de procesamiento opcional, declaración de tipo de documento y comentarios. La parte del body se compone de dos partes: estructural y de contenido (presente en los textos simples).</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-file-code fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Uso</h4>
+                        <p class="text-muted">- El XML separa datos de HTML  <br>- XML simplifica el intercambio de datos  <br>- XML simplifica el intercambio de datos <br> - El XML aumenta la disponibilidad de datos</p>
+                    </div>
+                </div>
+                <section class="signup-section" id="signup">
+                    <div class="container px-4 px-lg-5">
+                        <div class="row gx-4 gx-lg-5">
+                            <div class="col-md-10 col-lg-8 mx-auto text-center">
+                                <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                                <h2 class="text-white mb-5">Editemos el codigo!</h2>
+                                <textarea id=code name=code>
+        <!DOCTYPE html>
+        <html>
+        <style>
+        #container {
+          width: 400px;
+          height: 400px;
+          position: relative;
+          background: yellow;
+        }
+        #animate {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          background-color: red;
+        }
+        </style>
+        <body>
+        
+        <p><button onclick="myMove()">Click Me</button></p> 
+        
+        <div id ="container">
+          <div id ="animate"></div>
+        </div>
+        
+        <script>
+        function myMove() {
+          let id = null;
+          const elem = document.getElementById("animate");   
+          let pos = 0;
+          clearInterval(id);
+          id = setInterval(frame, 5);
+          function frame() {
+            if (pos == 350) {
+              clearInterval(id);
+            } else {
+              pos++; 
+              elem.style.top = pos + "px"; 
+              elem.style.left = pos + "px"; 
+            }
+          }
+        }
+        </script>
+        
+        </body>
+        </html>
+        </textarea>
+            <iframe id=preview></iframe>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        </div>
+
+        <!--JSON-->
+        <section class="page-section fond2" id="json">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">JSON</h2>
+                    <h3 class="section-subheading text-muted">JavaScript HTML DOM Eventos</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-question fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">¿Qué es?</h4>
+                        <p class="text-muted">JSON, cuyas siglas significan en verdad JavaScript object notation  es un formato de intercambio de datos que resulta muy fácil de leer y escribir para los programadores y sencillo de interpretar y crear para las máquinas.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-check fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Características</h4>
+                        <p class="text-muted">- Define seis tipos de valores: nulo, números, cadenas, booleanos, matrices y objetos <br> - Una coma o dos puntos mal ubicados pueden producir que un archivo JSON no funcione. <br> - Permite serializar y deserializar objetos en la mayoría de los idiomas.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-gear fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Funcionamiento</h4>
+                        <p class="text-muted">Su funcionamiento se basa en la estructuración de una colección de pares con nombre y valor que contienen: <br>- Una clave: que corresponde al identificador del contenido <br>- Un valor: que representa el contenido correspondiente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+
+         <!-- TABLA-->
+         <section class="page-section bg-light" id="tabla">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Tabla de diferencias</h2>
+                    <h2 class="section-subheading text-muted"><span>Las semejanzas se presentarán en color </span> <span style="color: green;">verde</span> <span> y las diferencias se presentarán en color</span> <span style="color: blue;">azul</span></h2>
+                    <div>
+                        <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th>XML</th>
+                                <th>JSON</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="diferencia">
+                                <td>El formato XML soporta diferentes tipos de datos, entre ellos: imágenes y gráficos</td>
+                                <td>El formato JSON solo ofrece soporte a números y textos.</td>
+                            </tr>
+                            <tr class="diferencia">
+                                <td>XML es más estructurado y, por lo tanto, tiene una interpretación más compleja.</td>
+                                <td>Los archivos JSON son fáciles de entender, pues su estructura y notación son bien sencillas.</td>
+                            </tr>
+                            <tr class="semejanza">
+                                <td colspan="2">Ambos soportan el formato UTF-8 el cual es el más utilizado en los sitios web</td>
+                            </tr>
+                            <tr class="diferencia">
+                                <td>XML es legible por los humanos pero no necesariamente por las máquinas.</td>
+                                <td>JSON es ligero y fácil de leer, pero no proporciona información sobre el esquema o el tipo</td>
+                            </tr>
+                            <tr class="semejanza">
+                                <td>5</td>
+                                <td>Irvin</td>
+                            </tr>
+            
+                            <tr>
+                                <td class="active">6</td>
+                                <td class="success">Irvin</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            
+                    </div>
+            
+                </div>
+            </div>
+        </section>
+
+        <div data-aos="fade-down-right">
+            <!-- AJAX-->
+         <section class="page-section fond3" id="ajax">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">AJAX</h2>
+                    <h3 class="section-subheading text-muted">JavaScript HTML DOM EventListener</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-question fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">¿Que es?</h4>
+                        <p class="text-muted">AJAX significa JavaScript asíncrono <br> Es un conjunto de técnicas de desarrollo web que permiten que las aplicaciones web funcionen de forma asíncrona, procesando cualquier solicitud al servidor en segundo plano</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-list fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Funcion</h4>
+                        <img src="assets/img/diagrama AJAX.jpg" alt="" width="90%"><img/>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-check fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Uso</h4>
+                        <p class="text-muted">- Sistemas de votación y calificación  <br>- Salas de chat <br>- Notificación de tendencias de Twitter</p>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+        </div>
+
+        <div data-aos="zoom-in-down">
+            <!-- Team-->
+        <section class="page-section bg-light" id="ejemplo">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Desarrollado por</h2>
+                </div>
+                <center><div>
+                    <div class="col-lg-4">
+                        <div>
+                            <img src="assets/img/team/ESPE encabezado.png" alt="" width="400px">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/Dilan.jpeg" alt="..." />
+                            <h4>Dilan Zurita</h4>
+                            <p class="text-muted">Estudiante en Ing. TI</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/dilanzurita/" aria-label="Parveen Anand Facebook Profile"><i class="fa-sharp fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div></center>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Para más información visitar las paginas oficiales.</p></div>
+                </div>
+            </div>
+        </section>
+        </div>
+
+        
+        
+        <!-- Clients-->
+        <div class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="https://www.w3schools.com/js/js_htmldom.asp"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/team/W3.png" alt="..." width="120px"/></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="https://platzi.com/cursos/dom/"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/team/Platzi.png" alt="..." width="200px"/></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="https://www.edx.org/es/course/programming-for-the-web-with-javascript"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/team/edX.png" alt="..." width="180px"/></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="https://codepen.io/tag/dom"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/team/CodePen_logo.png" alt="..." width="180px" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; ProWeb 2022</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Ejemplo de animaciones</h2>
+                                    <p class="item-intro text-muted">Creado por ProWeb.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/Ejemplos/Animaciones.PNG" alt="..." />
+                                    <p>Podemos observar que mediante un script podemos desplazar el cuadrado a la parte inferior derecha</p>
+                                    
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Cerrar ejemplo
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Ejemplo de evento al hacer click</h2>
+                                    <p class="item-intro text-muted">Creado por ProWeb.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/Ejemplos/Eventos.PNG" alt="..." />
+                                    <p>Mediante un script damos la indicación de cambiar el texto presentado en pantalla.</p><br>
+                                    <p>Para visualizar como funciona el evento vealo la seccion del tema.</p>
+                                    
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Cerrar Ejemplo
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Ejemplo del Eventlistener</h2>
+                                    <p class="item-intro text-muted">Creado por ProWeb.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/Ejemplos/Eventlistener.PNG" alt="..." />
+                                    <p>Mediante un script damos la indicación de al dar click en un boton dar la alerta con un mensaje personalizado</p><br>
+                                    <p>Para visualizar como funciona el event-listener vealo la seccion del tema.</p>
+                                    
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Cerrar Ejemplo
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Ejemplo de Nodo</h2>
+                                    <p class="item-intro text-muted">Creado por ProWeb.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/Ejemplos/nodo.PNG" alt="..." />
+                                    <p>Mediante el script se ha logrado añadir una etiqueta p considerada un nodo en la estructura del HTML</p>
+                                    <p>Para visualizar como funciona el nodo vealo la seccion del tema.</p>
+                                    
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Cerrar Ejemplo
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Ejemplo de colecciones</h2>
+                                    <p class="item-intro text-muted">Creado por ProWeb.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/Ejemplos/Colecciones.PNG" alt="..." />
+                                    <p>Mediante un script podemos modificar el color de los nodos o las etiquetas de nuestro HTML</p>
+                                    <p>Para visualizar como funciona las colecciones vealo la seccion del tema.</p>
+                                    
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Cerrar Ejemplo.
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Ejemplo de lista de Nodos</h2>
+                                    <p class="item-intro text-muted">Creado por ProWeb.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/Ejemplos/Lista_nodos.PNG" alt="..." />
+                                    <p>Parecido al ejemplo de colecciones pero podemos observar como cambia la forma de operar en el script para cambiar los colores de la estructura del HTML</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Cerrar Ejemplo
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        !-- Portfolio item 1 modal popup -->
+        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Ejemplo de navegacion</h2>
+                                    <p class="item-intro text-muted">Creado por ProWeb.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/Ejemplos/navegacion.PNG" alt="..." />
+                                    <p>Podemos observar que mediante un script podemos cambiar dos campos al mismo tiempo, en este caso dicen el mismo texto</p>
+                                    
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Cerrar ejemplo
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="js/reveal.js"></script>
+         <!-- JS DEL SCROLL -->
+         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+         <!-- ARRANQUE DEL SCROLL -->
+         <script>
+            AOS.init({
+                duration: 2000
+            });
+          </script>
+          <script>
+            var delay;
+            // Initialize CodeMirror editor with a nice html5 canvas demo.
+            var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
+              mode: 'text/html'
+              
+            });
+            editor.on("change", function() {
+              clearTimeout(delay);
+              delay = setTimeout(updatePreview, 300);
+            });
+            editor.setSize("800", "400");
+            function updatePreview() {
+              var previewFrame = document.getElementById('preview');
+              var preview =  previewFrame.contentDocument ||  previewFrame.contentWindow.document;
+              preview.open();
+              preview.write(editor.getValue());
+              preview.close();
+            }
+            setTimeout(updatePreview, 300);
+          </script>
+    </body>
+</html>
