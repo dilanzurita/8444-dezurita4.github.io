@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<animales>
+	<mamiferos>
+		<id>A01</id>
+		<nombre>Oso</nombre>
+		<comida>Carne</comida>
+	</mamiferos>
+	<mamiferos>
+		<id>A02</id>
+		<nombre>Guacamayo</nombre>
+		<comida>Fruta</comida>
+	</mamiferos>
+	<reptiles>
+		<id>A03</id>
+		<nombre>Dinosaurio</nombre>
+		<comida>Animales</comida>
+	</reptiles>
+	<aves>
+		<id>A04</id>
+		<nombre>Loro</nombre>
+		<comida>Banano</comida>
+	</aves>
+	<peces>
+		<id>A05</id>
+		<nombre>Tiburon</nombre>
+		<comida>Peces</comida>
+	</peces>
+	<anfibios>
+		<id>A06</id>
+		<nombre>Oso hormiguero</nombre>
+		<comida>Hormigas</comida>
+	</anfibios>
+</animales>

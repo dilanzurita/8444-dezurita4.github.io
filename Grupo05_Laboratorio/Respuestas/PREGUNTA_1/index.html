@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pregunta 1</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<style type="text/css">
+		#background{position:absolute; width:99%; height:130%;}
+		#fixed {position:absolute; top: 0px; left: 0px;}
+	</style>
+</head>
+<body>
+	<div>
+		<img id="background" src="../../Imagenes/fondo.jpg"/> 
+	</div>
+	<div id="fixed" style="padding-left:30%; padding-top: 10%;">
+		<br>	
+		<img src="../../Imagenes/selloespe.jpg" width="65%" align="center">
+		<h1 style="padding-left:25%;">Pregunta 1</h1>
+		<p id="pregunta"> Analizar una cadena de texto en un objeto DOM XML y extraer esa Información con JavaScript</p>
+		<p id="descripcion"> Para este ejercicio se utilizara una cadena de texto sobre tipos de animales de un zoologico</p>
+		<p id="p3">Zoologico</p>
+		<p style="padding-left:15%;">
+			<button onclick="traerAnimalVivo();" > Traer al animal vivo</button>
+			<button onclick="traerAnimalMuerto();">  Traer al animal muerto</button>
+			<button onclick="traerAnimalExtinto();">  Traer al animal extinto</button>
+		</p>
+		<p style="padding-left:35%;"id="p1"></p>
+		<br>
+		<button onclick="window.location.href='../../index.html'">Menu principal</button>
+	</div>
+	
+
+	<script>
+		var parser, xmlDoc;
+		//la cadena de texto muestra marca, modelo y estado
+		var text = 		
+		"<zoologico><animal><mamifero>OSO</mamifero><habitat>climafrio</habitat><estado>vivo</estado></animal><animal><mamifero>Guacamayo</mamifero><habitat>climacalido</habitat><estado>muerto</estado></animal><animal><mamifero>Dinosaurio</mamifero><habitat>jungla</habitat><estado>extinto</estado></animal></zoologico>";
+		function traerAnimalVivo(){
+			parser = new DOMParser();
+			xmlDoc = parser.parseFromString(text,"text/xml");
+			document.getElementById("p1").innerHTML = xmlDoc.getElementsByTagName("mamifero")[0].childNodes[0].nodeValue
+		}
+
+		function traerAnimalMuerto(){
+			parser = new DOMParser();
+			xmlDoc = parser.parseFromString(text,"text/xml");
+			document.getElementById("p1").innerHTML = xmlDoc.getElementsByTagName("mamifero")[1].childNodes[0].nodeValue
+		}
+
+		function traerAnimalExtinto(){
+			parser = new DOMParser();
+			xmlDoc = parser.parseFromString(text,"text/xml");
+			document.getElementById("p1").innerHTML = xmlDoc.getElementsByTagName("mamifero")[2].childNodes[0].nodeValue
+		}
+	</script>
+
+</body>
+</html>
