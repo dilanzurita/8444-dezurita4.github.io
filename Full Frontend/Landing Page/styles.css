@@ -1,0 +1,53 @@
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(rgba(154, 154, 30, 0.8), rgba(30, 105, 114, 0.7)),url("img/html_css_js.webp");
+    background-size: cover;
+    background-position:top;
+    color: rgb(255, 255, 255);
+}
+
+.logo {
+    height: 100px;
+    width: 190px;
+    margin-top: 20px;
+}
+
+.text-description {
+    letter-spacing: 2px;
+    font-family: sans-serif;    
+}
+
+.form-control {
+    background: transparent !important;
+    color: #fff !important;
+}
+
+a .fab {
+    color: #ffc;
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+.a_btn{
+    display: block;
+    width: 150px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 700;
+    background-color: rgb(24, 145, 110);
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin: 15px 15x;
+    color: rgb(230, 219, 219);
+    text-decoration: none;
+}
+
+.a_btn:hover{
+    background-color: rgb(85, 148, 179);
+    color: #fff;
+    text-decoration: none;
+}
